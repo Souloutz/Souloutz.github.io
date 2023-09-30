@@ -1,1 +1,186 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Howard Kong">
+        <meta name="description" content="A simple github.io profile page">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Souloutz's GitHub.io</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about_me">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="body">
+            <div class="about_me" id="about_me">
+                <!--Paragraph about yourself (what highschool you attended and so forth, hobbies, etc...)-->
+                <h1>About Me</h1>
+                <!--Photograph of your favorite food-->
+                    <img id="picture_me" src="images/picture_me.jpg" alt="Image of me!">
+                    <p>
+                        Hi! My name is <strong>Howard Kong</strong>. I am 18 years old and a current freshman at RIT as Software Engineering (BS)/Cybersecurity (MS). I am from Brooklyn, New York.
+                        I attended highschool at Stuyvesant High School.
+                    </p>
+
+                <h2>Hobbies</h2>
+                    <p>
+                        I have many hobbies, some of which include:
+                    </p>
+                    <ul>
+                        <li>Dancing</li>
+                        <li>Listening to music</li>
+                        <li>Learning languages</li>
+                            <ul>
+                                <li>Japanese</li>
+                                <li>Mandarin</li>
+                                <li>Cantonese</li>
+                                <li>Korean</li>
+                            </ul>
+                        <li>Eating delicious food</li>
+                        <li>Biking</li>
+                    </ul>
+            </div>
+
+            <hr >
+
+            <div class="schedule" id="schedule">
+                <h2>Current Class Schedule (Fall 2023)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th id="last_right">Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:00AM</td>
+                            <td>Chinese II</td>
+                            <td>Chinese II</td>
+                            <td>Chinese II</td>
+                            <td>Chinese II</td>
+                            <td id="last_right">RIT 365</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>11:00AM</td>
+                            <td></td>
+                            <td>Critical Thinking</td>
+                            <td></td>
+                            <td>Critical Thinking</td>
+                            <td id="last_right"></td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00PM</td>
+                            <td rowspan="2">Calculus II</td>
+                            <td>Hip Hop Beginner</td>
+                            <td rowspan="2">Calculus II</td>
+                            <td>Hip Hop Beginner</td>
+                            <td rowspan="2" id="last_right">Calculus II</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1:00PM</td>
+                            <td>Hip Hop Advanced</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>2:00PM</td>
+                            <td rowspan="2">Software Dev</td>
+                            <td></td>
+                            <td rowspan="2">Software Dev</td>
+                            <td></td>
+                            <td rowspan="2" id="last_right">Software Dev</td>
+                        </tr>
+
+                        <tr>
+                            <td>3:00PM</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>4:00PM</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="last_right"></td>
+                        </tr>
+
+                        <tr>
+                            <td>5:00PM</td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="3" id="last_bottom">Dance: Hip Hop Advanced</td>
+                            <td></td>
+                            <td id="last_right"></td>
+                        </tr>
+
+                        <tr>
+                            <td>6:00PM</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="last_right"></td>
+                        </tr>
+
+                        <tr>
+                            <td id="last_bottom">7:00PM</td>
+                            <td id="last_bottom"></td>
+                            <td id="last_bottom"></td>
+                            <td id="last_bottom"></td>
+                            <td id="bottom_corner"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="swen">
+                <!--Few bullet points about what I'd like to learn from this course-->
+                <h2>SWEN101: Software Engineering Freshman Seminar</h2>
+                <p>Things I would like to learn from this course:</p>
+                <ul>
+                    <li>Working in a team environment</li>
+                    <li>Understanding some of the various types of development and their pros and cons</li>
+                    
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="links" id="links">
+                <!--A link to the RIT SE website-->
+                <h2>Useful Links 🔗</h2>
+                <h3>RIT SE Website</h3>
+                <a href="https://www.rit.edu/study/software-engineering-bs" title="Important resources and information regarding a BS degree in software engineering at RIT" target="_blank">Software Engineering</a>        
+            </div>
+
+            <hr>
+
+            <div class="contact" id="contact">
+                <h2>Contact Me ✉️</h2>
+                    <p><a href="mailto:hk2383@rit.edu">Email</a>: hk2383@rit.edu</p>
+                    <p>Discord: souloutz_</p>
+            </div>
+        </div>
+    </body>
+</html>
