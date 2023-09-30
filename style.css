@@ -40,7 +40,7 @@ body {
 }
 
 .body {
-    margin: 0px 10px;
+    margin: 0px 30px;
 }
 
 .about_me {
@@ -55,6 +55,9 @@ body {
     float: right;
     border: 2px solid #333;
     margin-left: 10px;
+    margin-bottom: 30px;
+    max-width: 20%;
+    height: auto;
 }
 
 .schedule table {
@@ -82,14 +85,10 @@ body {
     border-bottom: none;
 }
 
-#picture_me {
-    max-width: 25%;
-    max-height: 25%;
-}
-
 hr {
+    width: 150%;
     height: 2px;
-    margin: 10px 0px;
+    margin: 30px -30px;
     border: none;
     background: linear-gradient(90deg,
     rgba(13, 8, 96, 1) 0%,
