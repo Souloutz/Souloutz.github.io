@@ -21,34 +21,37 @@
             </ul>
         </nav>
 
-        <div class="body">
+        <main>
             <div class="about_me" id="about_me">
                 <!--Paragraph about yourself (what highschool you attended and so forth, hobbies, etc...)-->
                 <h1>About Me</h1>
-                <!--Photograph of your favorite food-->
+                    <!--Photograph of your favorite food-->
                     <img id="picture_me" src="images/picture_me.jpg" alt="Image of me!">
                     <p>
-                        Hi! My name is <strong>Howard Kong</strong>. I am 18 years old and a current freshman at RIT as Software Engineering (BS)/Cybersecurity (MS). I am from Brooklyn, New York.
-                        I attended highschool at Stuyvesant High School.
+                        Hey! My name is <strong>Howard Kong</strong>. I am 18 years old and a current freshman at RIT as a Software Engineering (BS)/Cybersecurity (MS) student. I am from Brooklyn, New York and
+                        I attended Stuyvesant High School.
                     </p>
 
-                <h2>Hobbies</h2>
-                    <p>
-                        I have many hobbies, some of which include:
-                    </p>
-                    <ul>
-                        <li>Dancing</li>
-                        <li>Listening to music</li>
-                        <li>Learning languages</li>
-                            <ul>
-                                <li>Japanese</li>
-                                <li>Mandarin</li>
-                                <li>Cantonese</li>
-                                <li>Korean</li>
-                            </ul>
-                        <li>Eating delicious food</li>
-                        <li>Biking</li>
-                    </ul>
+                <button class="hobbies"></button>
+                    <div id="hobbies_content">
+                        <img src="images/tangyuan.jpg" alt="Image of a Chinese glutinous rice dessert called tang yuan that's usually filled with black sesame">
+                        <p>
+                            I have many hobbies, some of which include:
+                        </p>
+                        <ul>
+                            <li>Dancing</li>
+                            <li>Listening to music</li>
+                            <li>Learning languages</li>
+                                <ul>
+                                    <li>Japanese</li>
+                                    <li>Mandarin</li>
+                                    <li>Cantonese</li>
+                                    <li>Korean</li>
+                                </ul>
+                            <li>Eating delicious food</li>
+                            <li>Biking</li>
+                        </ul>
+                    </div>
             </div>
 
             <hr>
@@ -158,7 +161,7 @@
                 <!--Few bullet points about what I'd like to learn from this course-->
                 <h2>SWEN101: Software Engineering Freshman Seminar</h2>
                 <p>Things I would like to learn from this course:</p>
-                <ul>
+                <ul class="swen_list">
                     <li>Understand how to work effectively in a team environment</li>
                         <ul>
                             <li>Identify strategies to address issues</li>
@@ -167,7 +170,7 @@
                     <li>Understand some of the various types of development processes and their respective pros and cons</li>
                     <li>Develop a bare-bones project using the appropriate tools while going through the actual process of development</li>
                     <li>Identify departmental resources available</li>
-                    Describe different employment opportunities for Software Engineering graduates.
+                    <li>Identify different employment opportunities</li>
                 </ul>
             </div>
 
@@ -177,16 +180,21 @@
                 <!--A link to the RIT SE website-->
                 <h2>Useful Links 🔗</h2>
                 <h3>RIT SE Website</h3>
-                <a href="https://www.rit.edu/study/software-engineering-bs" title="Important resources and information regarding a BS degree in software engineering at RIT" target="_blank">Software Engineering</a>        
+                <ul>
+                    <li><a href="https://www.rit.edu/study/software-engineering-bs" title="Important resources and information regarding a BS degree in software engineering at RIT" target="_blank">Software Engineering</a></li>
+                    <li><a href="https://www.rit.edu/computing/sites/rit.edu.computing/files/docs/VSEN%20Flowchart%20Version%2010.1_2201%20curriculum.pdf" title="Standard Software Engineering Undergraduate Curriculum Flowchart" target="_blank">Undergraduate Curriculum</a></li>
+                </ul>
             </div>
-
-            <hr>
-
-            <div class="contact" id="contact">
-                <h2>Contact Me ✉️</h2>
-                    <p><a href="mailto:hk2383@rit.edu">Email</a>: hk2383@rit.edu</p>
-                    <p>Discord: souloutz_</p>
-            </div>
-        </div>
+        </main>
+        
+        <hr>
+        
+        <footer class="contact" id="contact">
+            <h2>Contact Me ✉️</h2>
+            <address>
+                    <p><a href="mailto:hk2383@rit.edu">Email:</a> hk2383@rit.edu</p>
+                    <p><span>Discord:</span> souloutz_</p>
+            </address>
+        </footer>
     </body>
 </html>
