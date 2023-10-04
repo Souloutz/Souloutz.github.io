@@ -75,7 +75,7 @@ main > :not(hr), footer {
 .about_me img {
     float: right;
     border: 2px solid #333;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 30px;
     max-width: 20%;
     height: auto;
@@ -93,9 +93,10 @@ main > :not(hr), footer {
     content: '\002B  Hobbies';
     font-weight: bold;
     font-size: 22px;
+    margin-bottom: 0px;
 }
 
-.active:after {
+.hobbies_active:after {
     content: '\2212  Hobbies';
 }
 
@@ -109,6 +110,32 @@ main > :not(hr), footer {
 #hobbies_content img {
     float: right;
     margin-right: 10%;
+}
+
+.clubs  {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-style: inherit;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.clubs:after {
+    content: '\002B  Clubs';
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.clubs_active:after {
+    content: '\2212  Clubs';
+}
+
+#clubs_content {
+    line-height: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .schedule table {
