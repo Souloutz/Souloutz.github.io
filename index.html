@@ -4,34 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <meta name="author" content="Howard Kong">
-        <meta name="description" content="A simple github.io profile page">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="description" content="A simple personal website">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
         <script src="script.js" defer></script>
-        <title>Souloutz's GitHub.io</title>
+        <title>Howard Kong's Personal Website</title>
     </head>
 
     <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about_me">About</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#links">Links</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <h5 id="name">HOWARD KONG</h5>
+            <h5><a href="https://github.com/Souloutz" target="_blank">PROFILE</a></h5>
+        </div>
 
         <main>
-            <div class="about_me" id="about_me">
-                <!--Paragraph about yourself (what highschool you attended and so forth, hobbies, etc...)-->
-                <h1>About Me</h1>
-                    <!--Photograph of your favorite food-->
-                    <img id="picture_me" src="images/picture_me.jpg" alt="Image of me!">
+            <div class="about-container">
+                <div class="about">
+                    <h1>About Me</h1>
                     <p>
                         Hey! My name is <strong>Howard Kong</strong>. I am 18 years old and a current freshman at RIT as a Software Engineering (BS)/Cybersecurity (MS) student. I am from Brooklyn, New York and
                         I attended Stuyvesant High School. I'm super chill and I love improving myself in all aspects. I am an avid dancer (I started around May 2022) and I hope to continue my dancing journey here. 
                         I am currently a part of Nova Dance Crew and I regularly take hip-hop classes and dance workshops.
                     </p>
+                </div>
+                <img id="picture_me" src="images/me.jpg" alt="A picture of me!">
+            </div>
 
                 <button class="hobbies"></button>
                     <div id="hobbies_content">
@@ -71,149 +69,18 @@
                             <li>Google Student Developer Club</li>
                         </ul>
                     </div>
-            </div>
 
             <hr>
-
-            <div class="schedule" id="schedule">
-                <h2>Current Class Schedule (Fall 2023)</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th id="last_right">Friday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>10:00AM</td>
-                            <td>Chinese II</td>
-                            <td>Chinese II</td>
-                            <td>Chinese II</td>
-                            <td>Chinese II</td>
-                            <td id="last_right">RIT 365</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>11:00AM</td>
-                            <td></td>
-                            <td>Critical Thinking</td>
-                            <td></td>
-                            <td>Critical Thinking</td>
-                            <td id="last_right"></td>
-                        </tr>
-
-                        <tr>
-                            <td>12:00PM</td>
-                            <td rowspan="2">Calculus II</td>
-                            <td>Hip Hop Beginner</td>
-                            <td rowspan="2">Calculus II</td>
-                            <td>Hip Hop Beginner</td>
-                            <td rowspan="2" id="last_right">Calculus II</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>1:00PM</td>
-                            <td>Hip Hop Advanced</td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2:00PM</td>
-                            <td rowspan="2">Software Dev</td>
-                            <td></td>
-                            <td rowspan="2">Software Dev</td>
-                            <td></td>
-                            <td rowspan="2" id="last_right">Software Dev</td>
-                        </tr>
-
-                        <tr>
-                            <td>3:00PM</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>4:00PM</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="last_right"></td>
-                        </tr>
-
-                        <tr>
-                            <td>5:00PM</td>
-                            <td></td>
-                            <td></td>
-                            <td rowspan="3" id="last_bottom">Dance: Hip Hop Advanced</td>
-                            <td></td>
-                            <td id="last_right"></td>
-                        </tr>
-
-                        <tr>
-                            <td>6:00PM</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="last_right"></td>
-                        </tr>
-
-                        <tr>
-                            <td id="last_bottom">7:00PM</td>
-                            <td id="last_bottom"></td>
-                            <td id="last_bottom"></td>
-                            <td id="last_bottom"></td>
-                            <td id="bottom_corner"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <hr>
-
-            <div class="swen">
-                <!--Few bullet points about what I'd like to learn from this course-->
-                <h2>SWEN101: Software Engineering Freshman Seminar</h2>
-                <p>Things I would like to learn from this course:</p>
-                <ul class="swen_list">
-                    <li>Understand how to work effectively in a team environment</li>
-                        <ul>
-                            <li>Identify strategies to address issues</li>
-                            <li>How to communicate</li>
-                        </ul>
-                    <li>Understand some of the various types of development processes and their respective pros and cons</li>
-                    <li>Develop a bare-bones project using the appropriate tools while going through the actual process of development</li>
-                    <li>Identify departmental resources available</li>
-                    <li>Identify different employment opportunities</li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div class="links" id="links">
-                <!--A link to the RIT SE website-->
-                <h2>Useful Links 🔗</h2>
-                <h3>RIT SE Website</h3>
-                <ul>
-                    <li><a href="https://www.rit.edu/study/software-engineering-bs" title="Important resources and information regarding a BS degree in software engineering at RIT" target="_blank">Software Engineering</a></li>
-                    <li><a href="https://www.rit.edu/computing/sites/rit.edu.computing/files/docs/VSEN%20Flowchart%20Version%2010.1_2201%20curriculum.pdf" title="Standard Software Engineering Undergraduate Curriculum Flowchart" target="_blank">Undergraduate Curriculum</a></li>
-                </ul>
-            </div>
         </main>
         
         <hr>
         
-        <footer class="contact" id="contact">
+        <div class="footer">
             <h2>Contact Me ✉️</h2>
             <address>
                     <p><a href="mailto:hk2383@rit.edu">Email:</a> hk2383@rit.edu</p>
                     <p><span>Discord:</span> souloutz_</p>
             </address>
-        </footer>
+        </div>
     </body>
 </html>
