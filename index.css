@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--background);
+    border-bottom: 0.1em solid var(--primary);
+}
+
+.header #name {
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    padding-left: 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header h5:last-of-type {
+    display: inherit;
+    height: 100%;
+    border-left: 2px solid var(--text); 
+    align-items: center;
+}
+
+.header a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main {
+    display: block;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.about-container {
+    max-width: fit-content  ;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#picture_me {
+    height: 30rem;
+    width: auto;
+    float: right;
+}
+
+.footer {
+    height: 100%;
+}

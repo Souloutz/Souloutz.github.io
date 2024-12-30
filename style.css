@@ -1,4 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Noto%20Serif:700|Noto%20Serif:400');
+
+:root {
+    --text: hsl(247, 100%, 95%);
+    --background: hsl(240, 60%, 1%);
+    --primary: hsl(192, 76%, 58%);
+    --secondary: hsl(243, 71%, 65%);
+    --accent: hsl(306, 76%, 66%);
+
+    --linearPrimarySecondary: linear-gradient(var(--primary), var(--secondary));
+    --linearPrimaryAccent: linear-gradient(var(--primary), var(--accent));
+    --linearSecondaryAccent: linear-gradient(var(--secondary), var(--accent));
+    --radialPrimarySecondary: radial-gradient(var(--primary), var(--secondary));
+    --radialPrimaryAccent: radial-gradient(var(--primary), var(--accent));
+    --radialSecondaryAccent: radial-gradient(var(--secondary), var(--accent));
+}
+
 body {
+    font-family: 'Noto Serif';
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    border: 0;
+}
+  
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Serif';
+    font-weight: 700;
+}
+  
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+/* body {
     margin: 0px;
     padding: 0px;
     background: linear-gradient(90deg,
@@ -46,10 +91,10 @@ body {
     transition-duration: 0.4s;
     background-color: goldenrod;
     color: black;
-}
+} */
 
 /* Apply to all elements in main, but not the child element (hr) */
-main > :not(hr), footer {
+/* main > :not(hr), footer {
     margin: 0px 5%;
 }
 
@@ -65,14 +110,14 @@ main > :not(hr), footer {
 
 .about_me p {
     line-height: 25px;
-}
+} */
 
 /* .about_me h2 {
     padding-left: 10px;
     line-height: 10px;
 } */
 
-.about_me img {
+/* .about_me img {
     float: right;
     border: 2px solid #333;
     margin-left: 20px;
@@ -219,4 +264,4 @@ footer {
 
 footer a, span {
     color: rgb(154, 154, 254);
-}
+} */
