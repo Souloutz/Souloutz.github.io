@@ -1,2 +1,3 @@
 ## Souloutz.github.io
-A simple introductory website created by me!
+
+My personal website! Go check it out!
