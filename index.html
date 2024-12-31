@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="author" content="Howard Kong">
         <meta name="description" content="A simple personal website">
-        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="index.css">
         <script src="script.js" defer></script>
@@ -15,60 +15,87 @@
     <body>
         <div class="header">
             <h5 id="name">HOWARD KONG</h5>
-            <h5><a href="https://github.com/Souloutz" target="_blank">PROFILE</a></h5>
+            <div>
+                <h5><a href="./assets/Howard Kong - Technical Resume (LaTeX).pdf">RESUME</a></h5>
+                <h5>
+                    <a href="https://github.com/Souloutz" target="_blank">
+                        GITHUB
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg> -->
+                    </a>
+                </h5>
+            </div>
         </div>
 
         <main>
             <div class="about-container">
                 <div class="about">
-                    <h1>About Me</h1>
+                    <h2>Who Am I?</h2>
                     <p>
-                        Hey! My name is <strong>Howard Kong</strong>. I am 18 years old and a current freshman at RIT as a Software Engineering (BS)/Cybersecurity (MS) student. I am from Brooklyn, New York and
-                        I attended Stuyvesant High School. I'm super chill and I love improving myself in all aspects. I am an avid dancer (I started around May 2022) and I hope to continue my dancing journey here. 
-                        I am currently a part of Nova Dance Crew and I regularly take hip-hop classes and dance workshops.
+                        Hi! My name is <strong>Howard</strong>, and I'm an undergraduate student at <a href="https://rit.edu" target="_blank" class="highlight">RIT</a> studying Software Engineering (BS) & Cybersecurity (MS), and minoring in Mathematics & Chinese.
+                        <br \>
+                        <br \>
+                        I love designing and building full-stack applications, and learning new technologies. Outside of that, I enjoy dancing, listening to music, spending time with my girlfriend and friends, learning languages, and playing videogames!
                     </p>
                 </div>
-                <img id="picture_me" src="images/me.jpg" alt="A picture of me!">
+                <img id="picture_me" src="./assets/me.jpg" alt="A picture of me!">
             </div>
 
-                <button class="hobbies"></button>
-                    <div id="hobbies_content">
-                        <img src="images/tangyuan.jpg" alt="Image of a Chinese glutinous rice dessert called tang yuan that's usually filled with black sesame">
-                        <p>
-                            I have many hobbies, some of which include:
-                        </p>
-                        <ul>
-                            <li>Dancing</li>
-                                <ul>
-                                    <li>My favorite styles are open style, house, hip-hop, k-pop, and waacking</li>
-                                    <li>I am currently a part of <strong>Nova Dance Crew</strong>!</li>
-                                </ul>
-                            <li>Listening to music</li>
-                            <li>Learning languages</li>
-                                <ul>
-                                    <li>Japanese</li>
-                                    <li>Mandarin</li>
-                                    <li>Cantonese</li>
-                                    <li>Korean</li>
-                                </ul>
-                            <li>Eating delicious food</li>
-                                <ul>
-                                    <li>Tang yuan (Chinese glutinous rice dessert)</li>
-                                </ul>
-                            <li>Biking</li>
-                            <li>Playing video games</li>
-                        </ul>
-                    </div>
+            <div>
+                <hr class="mt-3" id="separator">
+            </div>
 
-                <button class="clubs"></button>
-                    <div id="clubs_content">
-                        <p>The clubs that I am currently part of are (these already take up like all of my time):</p>
-                        <ul>
-                            <li>Nova Dance Crew (Performer)</li>
-                            <li>Asian Culture Society (Executive Assistant)</li>
-                            <li>Google Student Developer Club</li>
-                        </ul>
-                    </div>
+            <div class="projects">
+                <div>
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>NOVA Wiki [In Progress]</li>
+                            <ul>
+                                <li>Utilizing T3 Stack (ReactJS, NextJS, Drizzle, TailwindCSS)</li>
+                                <li>Currently in design phase using Figma and spearheaded by Mik Alam</li>
+                            </ul>
+                        <li>Multi-User Dungeon</li>
+                        <li>School Supplies E-Store</li>
+                            <ul>
+                                <li>Will try to revitalize UI at some point</li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <hr class="" id="separator">
+            </div>
+
+            <div class="extra">
+                <h2>Extra</h2>
+                <p>The clubs that I am currently part of are:</p>
+                <!-- <button class="clubs"></button> -->
+                <div class="clubs-content">
+                    <ul>
+                        <li>Nova Dance Crew (Instructor)</li>
+                        <li>Asian Culture Society (Former Executive Assistant)</li>
+                        <li>Society of Software Engineers</li>
+                        <li>Society of Asian Scientists and Engineers</li>
+                        <li>Google Student Developer Club</li>
+                    </ul>
+                </div>
+
+                <br \>
+
+                <p>The languages I can speak:</p>
+                <!-- <button class="languages"></button> -->
+                <div class="languages-content">
+                    <ul>
+                        <li>English</li>
+                        <li>Japanese</li>
+                        <li>Mandarin</li>
+                        <li>Cantonese</li>
+                        <li>Korean</li>
+                    </ul>
+                </div>
+            </div>
 
             <hr>
         </main>
@@ -76,11 +103,12 @@
         <hr>
         
         <div class="footer">
-            <h2>Contact Me ✉️</h2>
-            <address>
-                    <p><a href="mailto:hk2383@rit.edu">Email:</a> hk2383@rit.edu</p>
-                    <p><span>Discord:</span> souloutz_</p>
-            </address>
+            <p>
+                Portfolio created by <strong>Howard Kong</strong>
+                | Email: <a href="mailto:hk2383@rit.edu" target="_blank">hk2383@rit.edu</a>
+                | Discord: <a href="https://discord.com" target="_blank">souloutz_</a>
+                | LinkedIn: <a href="https://www.linkedin.com/in/howardkong826" target="_blank">howardkong826</a>
+            </p>
         </div>
     </body>
 </html>

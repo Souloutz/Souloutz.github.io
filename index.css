@@ -1,3 +1,4 @@
+/* Header */
 .header {
     display: flex;
     flex-direction: row;
@@ -11,15 +12,22 @@
     border-bottom: 0.1em solid var(--primary);
 }
 
+.header div {
+    display: inherit;
+    justify-content: end;
+    align-items: center;
+    /* height: 100%; */
+}
+
 .header #name {
-    background: linear-gradient(120deg, var(--primary), var(--accent));
     padding-left: 30px;
+    background: linear-gradient(120deg, var(--primary), var(--accent));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.header h5:last-of-type {
+.header h5:last-child {
     display: inherit;
     height: 100%;
     border-left: 2px solid var(--text); 
@@ -29,31 +37,156 @@
 .header a {
     padding-left: 20px;
     padding-right: 20px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:link {
+    color: var(--text);
+}
+
+a:hover {
+    transition-duration: 0.3s;
+    background: var(--linearPrimaryAccent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:active {
+    color: var(--text);
+}
+
+a:visited {
+    color: var(--text);
 }
 
 main {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-top: 7rem;
     margin-left: auto;
     margin-right: auto;
+    gap: 2rem;
     width: 70%;
 }
 
+/* About Me Section */
 .about-container {
     max-width: fit-content  ;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 4rem;
 }
 
-#picture_me {
-    height: 30rem;
-    width: auto;
-    float: right;
+.about h1 {
+    display: inherit;
+    margin-left: 0.2em;
+    padding-bottom: 0.2em;
 }
 
+.about p {
+    line-height: 2em;
+}
+
+#picture_me {
+    height: 28rem;
+    width: auto;
+    float: right;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+}
+
+/* Extra Section */
+
+/* .clubs  {
+    background-color: var(--text);
+    border-width: 0;
+}
+
+.clubs:after {
+    content: '\002B  Clubs';
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.clubs-active:after {
+    content: '\2212  Clubs';
+}
+
+.clubs-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+} 
+
+.languages {
+    background-color: var(--text);
+    border-width: 0;
+}
+
+.languages:after {
+    content: '\002B  Hobbies';
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.languages-active:after {
+    content: '\2212  Hobbies';
+}
+
+.languages-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+} */
+
+li {
+    line-height: 2em;
+}
+
+/* Separators */
+#separator {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+hr {
+    color: var(--primary);
+    overflow: hidden;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+/* Footer */
 .footer {
-    height: 100%;
+    text-align: center;
+}
+
+/* .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+    height: 7rem;
+} */
+
+/* .footer address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    padding-bottom: 1em;
+} */
+
+.footer a {
+    text-decoration: none;
 }
