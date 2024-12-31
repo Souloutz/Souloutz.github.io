@@ -1,222 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Noto%20Serif:700|Noto%20Serif:400');
+
+:root {
+    --text: hsl(247, 100%, 95%);
+    --background: hsl(240, 60%, 1%);
+    --primary: hsl(192, 76%, 58%);
+    --secondary: hsl(243, 71%, 65%);
+    --accent: hsl(306, 76%, 66%);
+
+    --angle: 120deg;
+    --linearPrimarySecondary: linear-gradient(var(--angle), var(--primary), var(--secondary));
+    --linearPrimaryAccent: linear-gradient(var(--angle), var(--primary), var(--accent));
+    --linearSecondaryAccent: linear-gradient(var(--angle), var(--secondary), var(--accent));
+    --radialPrimarySecondary: radial-gradient(var(--angle), var(--primary), var(--secondary));
+    --radialPrimaryAccent: radial-gradient(var(--angle), var(--primary), var(--accent));
+    --radialSecondaryAccent: radial-gradient(var(--angle), var(--secondary), var(--accent));
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
-    background: linear-gradient(90deg,
-    rgba(13, 8, 96, 0.3) 0%,
-    rgba(9, 9, 121, 0.3) 21%,
-    rgba(6, 84, 170, 0.3) 51%,
-    rgba(0, 255, 113, 0.3) 100%
-    );
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Noto Serif';
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    border: 0;
 }
-
-.navbar ul {
-    position: fixed;
-    top: 0;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    overflow: hidden;
-    list-style-type: none;
-    background-color: #333;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Serif';
+    font-weight: 700;
 }
+  
+html {font-size: 100%;} /* 16px */
 
-.navbar ul li {
-    float: left;
-    border-right: 1px solid white;
-}
+h1 {font-size: 4.210rem; /* 67.36px */}
 
-.navbar ul li:last-child {
-    float: right;
-    border-left: 1px solid white;
-    border-right: none;
-}
+h2 {font-size: 3.158rem; /* 50.56px */}
 
-.navbar ul li a {
-    color: white;
-    padding: 14px 16px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
+h3 {font-size: 2.369rem; /* 37.92px */}
 
-.navbar ul li a:hover {
-    transition-duration: 0.4s;
-    background-color: goldenrod;
-    color: black;
-}
+h4 {font-size: 1.777rem; /* 28.48px */}
 
-/* Apply to all elements in main, but not the child element (hr) */
-main > :not(hr), footer {
-    margin: 0px 5%;
-}
+h5 {font-size: 1.333rem; /* 21.28px */}
 
-.about_me {
-    margin-top: 60px;
-}
-
-.about_me h1 {
-    padding: 20px 0px;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.about_me p {
-    line-height: 25px;
-}
-
-/* .about_me h2 {
-    padding-left: 10px;
-    line-height: 10px;
-} */
-
-.about_me img {
-    float: right;
-    border: 2px solid #333;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    max-width: 20%;
-    height: auto;
-}
-
-.hobbies {
-    background-color: transparent;
-    border-width: 0;
-    font-family: inherit;
-    font-style: inherit;
-    margin-left: 20px;
-}
-
-.hobbies:after {
-    content: '\002B  Hobbies';
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 0px;
-}
-
-.hobbies_active:after {
-    content: '\2212  Hobbies';
-}
-
-#hobbies_content {
-    line-height: 25px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-#hobbies_content img {
-    float: right;
-    margin-right: 10%;
-}
-
-.clubs  {
-    background-color: transparent;
-    border-width: 0;
-    font-family: inherit;
-    font-style: inherit;
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.clubs:after {
-    content: '\002B  Clubs';
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.clubs_active:after {
-    content: '\2212  Clubs';
-}
-
-#clubs_content {
-    line-height: 25px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.schedule table {
-    border: 2px solid black;
-    background-color: rgb(211, 234, 250)
-}
-
-.schedule td, th {
-    padding: 4px 8px;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; 
-    text-align: center;
-}
-
-.schedule #last_bottom {
-    border-bottom: none;
-}
-
-.schedule #last_right {
-    border-right: none;
-}
-
-.schedule #bottom_corner {
-    border-right: none;
-    border-bottom: none;
-}
-
-hr {
-    width: 100%;
-    margin: 30px 0px;
-    height: 2px;
-    border: none;
-    background: linear-gradient(90deg,
-    rgba(13, 8, 96, 1) 0%,
-    rgba(9, 9, 121, 1) 21%,
-    rgba(6, 84, 170, 1) 51%,
-    rgba(0, 255, 113, 1) 100%
-    );
-}
-
-hr:last-of-type {
-    margin-bottom: 0px;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:visited {
-    color: rgb(255, 37, 255);
-}
-
-a:hover {
-    color: rgb(248, 99, 149);
-    font-weight: bold;
-}
-
-.swen {
-    line-height: 22px;
-}
-
-.links > h3, a {
-    line-height: 5px;
-}
-
-footer {
-    display: block;
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-    bottom: 0;
-    padding: 0px;
-    margin: 0px;
-    font-style: norm;
-    font-size: 16px;
-    line-height: 6px;
-    text-align: center;
-    color: white;
-}
-
-footer a, span {
-    color: rgb(154, 154, 254);
-}
+small {font-size: 0.750rem; /* 12px */}
