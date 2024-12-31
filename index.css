@@ -21,7 +21,7 @@
 
 .header #name {
     padding-left: 30px;
-    background: linear-gradient(120deg, var(--primary), var(--accent));
+    background: var(--linearPrimaryAccent);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -146,7 +146,42 @@ main {
 } */
 
 li {
-    line-height: 2em;
+    line-height: 1.8em;
+}
+
+#project {
+    font-weight: 700;
+    width: fit-content;
+    line-height: 1.5em;
+    background: var(--linearPrimarySecondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#project::marker {
+    color: var(--primary);
+}
+
+#tech {
+    color: hsl(240, 61%, 75%);
+}
+
+ul ul li:not(#tech) {
+    font-size: 0.95rem;
+}
+
+ul ul {
+    padding-bottom: 0.7rem;
+}
+
+/* Extra */
+.extra {
+    padding-top: 0;
+}
+
+.extra ul li {
+    font-size: 0.95rem;
 }
 
 /* Separators */
