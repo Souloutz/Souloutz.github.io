@@ -41,8 +41,8 @@
     font-weight: 400;
 }
 
-.header a:hover {
-    animation: colorCycle 2.5s alternate infinite;
+/* .header a:hover {
+    animation: colorCycle 1s alternate infinite;
 }
 
 @keyframes colorCycle {
@@ -60,9 +60,8 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        /* transition-delay: 0.3s; */
     }
-}
+} */
 
 a:link {
     color: var(--text);
