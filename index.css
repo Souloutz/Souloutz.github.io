@@ -68,7 +68,8 @@ a:link {
 }
 
 a:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
     background: var(--linearPrimaryAccent);
     background-clip: text;
     -webkit-background-clip: text;
@@ -90,7 +91,7 @@ main {
     margin-top: 7rem;
     margin-left: auto;
     margin-right: auto;
-    gap: 2rem;
+    gap: 1.75rem;
     width: 70%;
 }
 
@@ -119,7 +120,7 @@ main {
     height: 28rem;
     width: auto;
     float: right;
-    border: 1px solid var(--text);
+    border: 2px solid var(--text);
     border-radius: 10px;
 }
 
@@ -142,6 +143,7 @@ li {
 
 #project {
     font-weight: 700;
+    font-size: 1.5rem;
     width: fit-content;
     line-height: 1.5em;
     background: var(--linearPrimarySecondary);
@@ -156,10 +158,23 @@ li {
 
 #tech {
     color: hsl(240, 61%, 75%);
+    list-style-type:disc;
+    font-size: 1.2rem;
 }
 
-ul ul li:not(#tech) {
-    font-size: 0.95rem;
+#date {
+    list-style-type: none;
+    font-style: italic;
+    color: hsl(240, 36%, 67%);
+    padding-bottom: 0.25rem;
+}
+
+ul ul li:not(#tech, #date) {
+    list-style-type: none;
+    font-size: 1rem;
+    border-left: 1px solid var(--primary);
+    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 ul ul {
