@@ -1,3 +1,17 @@
+/* Scroll to Top Button */
+.scroll-button {
+    right: 2rem;
+    bottom: 5rem;
+    width: 2.5rem;
+    position: fixed;
+    display: block;
+    border-radius: 45%;
+    background-color: var(--text);
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -20,11 +34,16 @@
 }
 
 .header #name {
+    display: inline-block;
     padding-left: 30px;
     background: var(--linearPrimaryAccent);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.header #name:hover {
+    cursor: pointer;
 }
 
 .header h5:last-child {
