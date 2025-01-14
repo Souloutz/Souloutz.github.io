@@ -1,30 +1,12 @@
-// const clubs = document.getElementsByClassName("clubs");
-// const languages = document.getElementsByClassName("languages");
+const smoothScroll = () => {
+    window.scroll({top: 0, behavior: "smooth"})
+}
 
-// // Only button element exists
-// clubs[0].addEventListener("click", async function () {
-// 	this.classList.toggle("clubs-active");
-// 	var content = this.nextElementSibling;
+const headerName = document.getElementById("name");
+headerName.addEventListener("click", smoothScroll);
 
-// 	if (content.style.maxHeight) {
-// 		content.style.maxHeight = null;
-// 	}
-
-// 	else {
-// 		content.style.maxHeight = content.scrollHeight + "px";
-// 	}	
-// });
-
-// // Only button element exists
-// languages[0].addEventListener("click", async function () {
-// 	this.classList.toggle("languages-active");
-// 	var content = this.nextElementSibling;
-
-// 	if (content.style.maxHeight) {
-// 		content.style.maxHeight = null;
-// 	}
-
-// 	else {
-// 		content.style.maxHeight = content.scrollHeight + "px";
-// 	}
-// });
+const button = document.createElement("button");
+button.className = "scroll-button"
+button.textContent = "↑";
+button.addEventListener("click", smoothScroll);
+document.body.appendChild(button)
